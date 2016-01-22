@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WCFLabb1Client.AddTwoNumbersReference;
+using WCFLabb1Client.Add2NumbersReference;
 
 namespace WCFLabb1Client
 {

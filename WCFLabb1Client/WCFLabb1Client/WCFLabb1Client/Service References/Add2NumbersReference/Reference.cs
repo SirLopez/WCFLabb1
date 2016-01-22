@@ -8,19 +8,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WCFLabb1Client.AddTwoNumbersReference {
+namespace WCFLabb1Client.Add2NumbersReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AddTwoNumbersReference.AddTwoNumbersSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Add2NumbersReference.AddTwoNumbersSoap")]
     public interface AddTwoNumbersSoap {
         
         // CODEGEN: Generating message contract since element name x from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add2Numbers", ReplyAction="*")]
-        WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse Add2Numbers(WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest request);
+        WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse Add2Numbers(WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add2Numbers", ReplyAction="*")]
-        System.Threading.Tasks.Task<WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse> Add2NumbersAsync(WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest request);
+        System.Threading.Tasks.Task<WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse> Add2NumbersAsync(WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace WCFLabb1Client.AddTwoNumbersReference {
     public partial class Add2NumbersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Add2Numbers", Namespace="http://tempuri.org/", Order=0)]
-        public WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequestBody Body;
+        public WCFLabb1Client.Add2NumbersReference.Add2NumbersRequestBody Body;
         
         public Add2NumbersRequest() {
         }
         
-        public Add2NumbersRequest(WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequestBody Body) {
+        public Add2NumbersRequest(WCFLabb1Client.Add2NumbersReference.Add2NumbersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -68,12 +68,12 @@ namespace WCFLabb1Client.AddTwoNumbersReference {
     public partial class Add2NumbersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Add2NumbersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponseBody Body;
+        public WCFLabb1Client.Add2NumbersReference.Add2NumbersResponseBody Body;
         
         public Add2NumbersResponse() {
         }
         
-        public Add2NumbersResponse(WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponseBody Body) {
+        public Add2NumbersResponse(WCFLabb1Client.Add2NumbersReference.Add2NumbersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -96,12 +96,12 @@ namespace WCFLabb1Client.AddTwoNumbersReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface AddTwoNumbersSoapChannel : WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap, System.ServiceModel.IClientChannel {
+    public interface AddTwoNumbersSoapChannel : WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AddTwoNumbersSoapClient : System.ServiceModel.ClientBase<WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap>, WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap {
+    public partial class AddTwoNumbersSoapClient : System.ServiceModel.ClientBase<WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap>, WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap {
         
         public AddTwoNumbersSoapClient() {
         }
@@ -123,30 +123,30 @@ namespace WCFLabb1Client.AddTwoNumbersReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap.Add2Numbers(WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest request) {
+        WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap.Add2Numbers(WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest request) {
             return base.Channel.Add2Numbers(request);
         }
         
         public int Add2Numbers(string x, string y) {
-            WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest inValue = new WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest();
-            inValue.Body = new WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequestBody();
+            WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest inValue = new WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest();
+            inValue.Body = new WCFLabb1Client.Add2NumbersReference.Add2NumbersRequestBody();
             inValue.Body.x = x;
             inValue.Body.y = y;
-            WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse retVal = ((WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap)(this)).Add2Numbers(inValue);
+            WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse retVal = ((WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap)(this)).Add2Numbers(inValue);
             return retVal.Body.Add2NumbersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse> WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap.Add2NumbersAsync(WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest request) {
+        System.Threading.Tasks.Task<WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse> WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap.Add2NumbersAsync(WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest request) {
             return base.Channel.Add2NumbersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse> Add2NumbersAsync(string x, string y) {
-            WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest inValue = new WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequest();
-            inValue.Body = new WCFLabb1Client.AddTwoNumbersReference.Add2NumbersRequestBody();
+        public System.Threading.Tasks.Task<WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse> Add2NumbersAsync(string x, string y) {
+            WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest inValue = new WCFLabb1Client.Add2NumbersReference.Add2NumbersRequest();
+            inValue.Body = new WCFLabb1Client.Add2NumbersReference.Add2NumbersRequestBody();
             inValue.Body.x = x;
             inValue.Body.y = y;
-            return ((WCFLabb1Client.AddTwoNumbersReference.AddTwoNumbersSoap)(this)).Add2NumbersAsync(inValue);
+            return ((WCFLabb1Client.Add2NumbersReference.AddTwoNumbersSoap)(this)).Add2NumbersAsync(inValue);
         }
     }
 }

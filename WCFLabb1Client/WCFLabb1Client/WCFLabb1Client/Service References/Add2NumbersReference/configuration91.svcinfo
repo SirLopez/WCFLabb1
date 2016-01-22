@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="bZFEpAJswA1BrTwSB5Z0QWh0eCM=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="VIj/Vwx825I69x3axuegnPAO9m0=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="AddTwoNumbersSoap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="AddTwoNumbersSoap" contract="AddTwoNumbersReference.AddTwoNumbersSoap" bindingType="basicHttpBinding" address="http://localhost:2964/AddTwoNumbers.asmx" bindingConfiguration="AddTwoNumbersSoap">
+    <endpoint name="AddTwoNumbersSoap" contract="Add2NumbersReference.AddTwoNumbersSoap" bindingType="basicHttpBinding" address="http://localhost:2964/AddTwoNumbers.asmx" bindingConfiguration="AddTwoNumbersSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:2964/AddTwoNumbers.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>AddTwoNumbersSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AddTwoNumbersReference.AddTwoNumbersSoap</serializedValue>
+          <serializedValue>Add2NumbersReference.AddTwoNumbersSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

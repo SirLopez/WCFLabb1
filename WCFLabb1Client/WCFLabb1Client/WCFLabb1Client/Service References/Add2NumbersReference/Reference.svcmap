@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="34e3e0c6-41ea-4ada-837f-616a25a7a180" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b49ba80f-6290-4cca-8ac3-ed5059895de6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://localhost:2964/AddTwoNumbers.asmx?op=Add2Numbers" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AddTwoNumbers.wsdl" MetadataType="Wsdl" ID="301d4274-8076-4ea8-ac68-bb92dcef1a9e" SourceId="1" SourceUrl="http://localhost:2964/AddTwoNumbers.asmx?wsdl" />
-    <MetadataFile FileName="AddTwoNumbers.disco" MetadataType="Disco" ID="c8dbf345-0624-4ef6-99b7-7eb400d156dd" SourceId="1" SourceUrl="http://localhost:2964/AddTwoNumbers.asmx?disco" />
+    <MetadataFile FileName="AddTwoNumbers.wsdl" MetadataType="Wsdl" ID="ab978f0b-0e8d-4061-8de4-b7de839c4feb" SourceId="1" SourceUrl="http://localhost:2964/AddTwoNumbers.asmx?wsdl" />
+    <MetadataFile FileName="AddTwoNumbers.disco" MetadataType="Disco" ID="f3a5f078-62e7-426a-96d2-6c6b2ad7865b" SourceId="1" SourceUrl="http://localhost:2964/AddTwoNumbers.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

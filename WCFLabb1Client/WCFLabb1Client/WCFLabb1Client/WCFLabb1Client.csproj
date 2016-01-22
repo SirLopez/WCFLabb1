@@ -100,8 +100,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Service References\AddTwoNumbersReference\AddTwoNumbers.wsdl" />
-    <Content Include="Service References\AddTwoNumbersReference\WCFLabb1Client.AddTwoNumbersReference.Add2NumbersResponse.datasource">
+    <None Include="Service References\Add2NumbersReference\AddTwoNumbers.wsdl" />
+    <Content Include="Service References\Add2NumbersReference\WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\WeatherServiceReference\WebService1.wsdl" />
@@ -116,10 +116,10 @@
     <Content Include="Add2Numbers.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <None Include="Service References\AddTwoNumbersReference\AddTwoNumbers.disco" />
-    <None Include="Service References\AddTwoNumbersReference\configuration91.svcinfo" />
-    <None Include="Service References\AddTwoNumbersReference\configuration.svcinfo" />
-    <None Include="Service References\AddTwoNumbersReference\Reference.svcmap">
+    <None Include="Service References\Add2NumbersReference\AddTwoNumbers.disco" />
+    <None Include="Service References\Add2NumbersReference\configuration91.svcinfo" />
+    <None Include="Service References\Add2NumbersReference\configuration.svcinfo" />
+    <None Include="Service References\Add2NumbersReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -145,7 +145,7 @@
       <DependentUpon>Add2Numbers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\AddTwoNumbersReference\Reference.cs">
+    <Compile Include="Service References\Add2NumbersReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -167,7 +167,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\AddTwoNumbersReference\" />
+    <WCFMetadataStorage Include="Service References\Add2NumbersReference\" />
     <WCFMetadataStorage Include="Service References\WeatherServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
