@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5EEB29F5-85A0-4B9D-BF1F-045FD279D19B}</ProjectGuid>
+    <ProjectGuid>{660D55B7-8A8B-49FF-89AE-9909A62D8A4F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WCFLabb1Client</RootNamespace>
-    <AssemblyName>WCFLabb1Client</AssemblyName>
+    <RootNamespace>Subtract2Numbers</RootNamespace>
+    <AssemblyName>Subtract2Numbers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -76,8 +76,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -96,24 +94,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Add3Numbers.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Service References\Add2NumbersReference\AddTwoNumbers.wsdl" />
-    <Content Include="Service References\Add2NumbersReference\WCFLabb1Client.Add2NumbersReference.Add2NumbersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\Add3NumbersReference\AddThreeNumbers.wsdl" />
-    <Content Include="Service References\Add3NumbersReference\WCFLabb1Client.Add3NumbersReference.Add3NumbersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\Subtract2NumbersReference\Subtract2Numbers.wsdl" />
-    <Content Include="Service References\Subtract2NumbersReference\WCFLabb1Client.Subtract2NumbersReference.SubtractTwoNumbersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\WeatherServiceReference\WebService1.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,103 +106,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Add2Numbers.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <None Include="Service References\Add2NumbersReference\AddTwoNumbers.disco" />
-    <None Include="Service References\Add2NumbersReference\configuration91.svcinfo" />
-    <None Include="Service References\Add2NumbersReference\configuration.svcinfo" />
-    <None Include="Service References\Add2NumbersReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\Add3NumbersReference\AddThreeNumbers.disco" />
-    <None Include="Service References\Add3NumbersReference\configuration91.svcinfo" />
-    <None Include="Service References\Add3NumbersReference\configuration.svcinfo" />
-    <None Include="Service References\Add3NumbersReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\Subtract2NumbersReference\Subtract2Numbers.disco" />
-    <None Include="Service References\Subtract2NumbersReference\configuration91.svcinfo" />
-    <None Include="Service References\Subtract2NumbersReference\configuration.svcinfo" />
-    <None Include="Service References\Subtract2NumbersReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Service References\WeatherServiceReference\WCFLabb1Client.WeatherServiceReference.WeatherForecastResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\WeatherServiceReference\WebService1.disco" />
-    <None Include="Service References\WeatherServiceReference\configuration91.svcinfo" />
-    <None Include="Service References\WeatherServiceReference\configuration.svcinfo" />
-    <None Include="Service References\WeatherServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Subtract2Numbers.aspx" />
-    <Content Include="WeatherForecast.aspx" />
+    <Content Include="Subtract2Numbers.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add2Numbers.aspx.cs">
-      <DependentUpon>Add2Numbers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Add2Numbers.aspx.designer.cs">
-      <DependentUpon>Add2Numbers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Add3Numbers.aspx.cs">
-      <DependentUpon>Add3Numbers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Add3Numbers.aspx.designer.cs">
-      <DependentUpon>Add3Numbers.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\Add2NumbersReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\Add3NumbersReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\Subtract2NumbersReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\WeatherServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Subtract2Numbers.aspx.cs">
-      <DependentUpon>Subtract2Numbers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Subtract2Numbers.aspx.designer.cs">
-      <DependentUpon>Subtract2Numbers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WeatherForecast.aspx.cs">
-      <DependentUpon>WeatherForecast.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WeatherForecast.aspx.designer.cs">
-      <DependentUpon>WeatherForecast.aspx</DependentUpon>
+    <Compile Include="Subtract2Numbers.asmx.cs">
+      <DependentUpon>Subtract2Numbers.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Add2NumbersReference\" />
-    <WCFMetadataStorage Include="Service References\Add3NumbersReference\" />
-    <WCFMetadataStorage Include="Service References\Subtract2NumbersReference\" />
-    <WCFMetadataStorage Include="Service References\WeatherServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -233,9 +134,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2402</DevelopmentServerPort>
+          <DevelopmentServerPort>6214</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2402/</IISUrl>
+          <IISUrl>http://localhost:6214/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
